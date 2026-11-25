@@ -12,6 +12,10 @@ android {
     }
 
     defaultConfig {
+ndk {
+    abiFilters += listOf("armeabi-v7a")  // 只编 32 位，省时间
+}
+
         applicationId = "com.yunsmall.usbipdcpp"
         minSdk = 28
         targetSdk = 36
